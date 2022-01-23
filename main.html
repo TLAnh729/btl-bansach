@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTL-BanSach_DS theo nhom san pham</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assest/css/slideshow.css">
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/grid.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
+    <link rel="stylesheet" href="./assest/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- Header with login -->
+                <nav class="header__login hide-on-mobile-tablet">
+                    <ul class="header__login-list">
+                        <li class="header__login-item header_login-item--hasAcount">
+                            <img src="./assest/img/avatar.png" alt="avatar" class="header__login-user-img">
+                            <span class="header__login-user-name text-strong">
+                                tranlananhurumaki
+                            </span>
+                            <div class="header_account header__baccau">
+                                <ul class="header_account-list">
+                                    <li class="header_account-item"><a href="#">Tài khoản của tôi</a></li>
+                                    <li class="header_account-item"><a href="#">Đơn mua</a></li>
+                                    <li class="header_account-item header_account-item--separate"><a href="#">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- No Login  -->
+                        <!-- <li class="header__login-item text-strong header__login-item--sepprate">
+                            <a href="" class="header__login-item-link"> Đăng nhập</a>
+                        </li>
+                        <li class="header__login-item header__login-item--strong">
+                            <a href="" class="header__login-item-link">Đăng kí</a>
+                        </li> -->
+                    </ul>
+                </nav>
+
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <!-- mobile-menu-button -->
+                    <div id="mobile-menu" class="header__mobile-menu hide-on-tablet">
+                        <i class="header__mobile-menu-icon ti-menu"></i>
+                    </div>
+                    <!-- header logo -->
+                    <div class="header__logo hide-on-mobile">
+                        <a href="/" class="header__logo-link">
+                            <p class="header__logo-title1">Shop sell</p>
+                            <p class="header__logo-title2">SACH</p>
+                        </a>
+                    </div>
+                    <!-- header search -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Làm bạn với bầu trời</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Tiếng Anh lớp 8</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon ti-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- header cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <div class="header-cart">
+                                <div class="header__cart-icon">
+                                    <i class=" ti-shopping-cart"></i>
+                                    <span class="header__cart-notice">3</span>
+                                </div>
+                                <div class="header__cart-title hide-on-mobile">
+                                    <span>Giỏ hàng</span>
+                                </div>
+                            </div>
+                            <!-- No cart: not product -->
+                            <div class="header__cart-list header__baccau">
+                                <img src="./assest/img/empty-cart.png" alt="Not Product" class="nocart-img">
+                                <span class="header__cart-nocart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <!-- sp1 -->
+                                    <li class="header__cart-item">
+                                        <img src="./assest/img/nhom212.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0 - Bản Thường - Tặng Kèm 01 Bookmark Bùa Chú Mẫu Ngẫu Nhiên</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">30.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Truyện tran - Anime</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </li>
+                                    <!-- sp2 -->
+                                    <li class="header__cart-item">
+                                        <img src="./assest/img/nhamtru15.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Thanh Gươm Diệt Quỷ - Tập 15: Bình Minh Dâng Lên, Mặt Trời Chiếu Rọi</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">25.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">5</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Truyện tran - Anime</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </li>
+                                    <!-- sp3 -->
+                                    <li class="header__cart-item">
+                                        <img src="./assest/img/camonnguoilon.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Cảm Ơn Người Lớn (Bìa Mềm)</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">94.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Thiếu nhi</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- header with menu -->
+                <div class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item"><a href="#">Tiểu thuyết</a></li>
+                        <li class="header-menu-item"><a href="#">Trinh thám</a></li>
+                        <li class="header-menu-item"><a href="#">Tuyện tranh - Anime</a></li>
+                        <li class="header-menu-item"><a href="#">Truyện thiếu nhi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="containner_slider">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./assest/img/bannersach1.jpg" style="width:100%">
+                        <div class="text">Tiểu thuyết</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./assest/img/bannerTrinhtham.jpeg" style="width:100%">
+                        <div class="text">Trinh Thám</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./assest/img/bannerTruyentranhanime.jpeg" style="width:100%">
+                        <div class="text">Truyện tranh - Anime</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./assest/img/bannerTruyencotich.jpeg" style="width:100%">
+                        <div class="text">Truyện thiếu nhi</div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+  
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+           <div class="grid wide">
+            <div class="app__content">
+                <div class="col l-12 m-12 c-12 content__warp">
+                    <div class="home-heading">
+                        <a href="#">Xu hướng của tháng</a>
+                    </div>
+                    <div class="home-product">
+                        <div class="row sm-gutter">
+                            <!-- Product -->
+                                <!-- Product 1 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhamtru15.jpg);"></div>
+                                    <h4 class="home-product-item__name">Thanh Gươm Diệt Quỷ - Tập 15: Bình Minh Dâng Lên, Mặt Trời Chiếu Rọi</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">25.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 2 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/conan.jpg);"></div>
+                                    <h4 class="home-product-item__name">Thám tử lừng danh Conan Tập 99</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">20.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 3 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/camonnguoilon.jpg);"></div>
+                                    <h4 class="home-product-item__name">Cảm Ơn Người Lớn (Bìa Mềm)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">94.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 4  -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/dungnoichuyenvoicoay.jpg);"></div>
+                                    <h4 class="home-product-item__name">Đừng Nói Chuyện Với Cô Ấy (Tập 2)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">126.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col l-12 m-12 c-12 content__warp">
+                    <div class="home-heading">
+                       <a href="#">Những cuốn sách theo thời đại</a>
+                    </div>
+                    <div class="home-product">
+                        <div class="row sm-gutter">
+                            <!-- Product -->
+                                <!-- Product 1 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom21.jpg);"></div>
+                                    <h4 class="home-product-item__name">Lớp Học Mật Ngữ - Tập 18 - Tặng Kèm Khẩu Trang</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">36.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 2 -->
+                                <div class="col l-3 m-4 c-6">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(./assest/img/nhom211.jpg);"></div>
+                                        <h4 class="home-product-item__name">Bạn Đắt Giá Bao Nhiêu? (Tái Bản)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-curent">119.000đ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 3 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom23.jpg);"></div>
+                                    <h4 class="home-product-item__name">Combo Sự Im Lặng Của Bầy Cừu và Mười Ba Lý Do</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">207.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 4  -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom24.jpg);"></div>
+                                    <h4 class="home-product-item__name">Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản 2017)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">180.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 5 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom25.jpg);"></div>
+                                    <h4 class="home-product-item__name">Hai Số Phận (Tái Bản 2018)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">155.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 6 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom26.jpg);"></div>
+                                    <h4 class="home-product-item__name">Làm Bạn Với Bầu Trời (Bìa Mềm) (Tặng Kèm Khung Ảnh Số Lượng Có Hạn)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">110.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                                <!-- Product 7 -->
+                                <div class="col l-3 m-4 c-6">
+                                    <a href="#" class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(./assest/img/nhom210.jpg);"></div>
+                                        <h4 class="home-product-item__name">Có Một Ngày, Bố Mẹ Sẽ Già Đi</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-curent">96.000đ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Product 8 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom28.jpg);"></div>
+                                    <h4 class="home-product-item__name">Nhật Ký Chú Bé Nhút Nhát - Tập 16: Trùm Cuối</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">44.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product 9 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom29.jpg);"></div>
+                                    <h4 class="home-product-item__name">Hoàng Tử Bé (Tái Bản 2019)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">75.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Product 10 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom27.jpg);"></div>
+                                    <h4 class="home-product-item__name">5 Centimet Trên Giây</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">50.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product 11 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom22.jpg);"></div>
+                                    <h4 class="home-product-item__name">Sách - Bảy năm vẫn ngoảnh về phương bắc (combo tập 1+2)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">255.500đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product 12 -->
+                            <div class="col l-3 m-4 c-6">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(./assest/img/nhom212.jpg);"></div>
+                                    <h4 class="home-product-item__name">Chú Thuật Hồi Chiến: Trường Chuyên Chú Thuật Tokyo - Tập 0 - Bản Thường - Tặng Kèm 01 Bookmark Bùa Chú Mẫu Ngẫu Nhiên</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-curent">30.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end prouct -->
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12 footer__shop">
+                        <div class="footer__heading">
+                            <a href="#" class="footer-logo">
+                                <p class="footer-title1">Shop bán</p>
+                                <p class="footer-title2">SACH</p>
+                            </a>
+                        </div>
+                        <div class="footer__content">
+                            <ul class="footer-list">
+                                <li class="footer__text">Đề tài: Website bán sách</li>
+                                <li class="footer__text">Bài tập lớn: Lập trình web cơ bản</li>
+                                <li class="footer__text">Giáo viên hướng dẫn: Thầy Trần Tiến Dũng</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 footer__member">
+                        <div class="footer__heading">
+                            <h3>Thành viên</h3>
+                        </div>
+                        <div class="footer__content">
+                            <ul class="footer-list">
+                                <li class="footer__text">Nhóm trưởng: Nguyễn Thu Hà - 1910A05</li>
+                                <li class="footer__text">Trần Lan Anh - 1910A05</li>
+                                <li class="footer__text">Bùi Thị My - 1910A05</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="grid wide">
+                    <p class="footer__text-year">© 2022 - Sinh viên Đại học Mở Hà Nội</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./assest/javascript/slideshowscript.js"></script>
+<script src="./assest/javascript/mainscript.js"></script>
+</html>
