@@ -289,8 +289,10 @@
 }
 /* no cart */
 .nocart-img {
-    display: none;
+    /* display: none; */
+    display: block;
     width: 60%;
+    margin: 0 auto;
 }
 .header__cart-nocart-msg {
     display: block;
@@ -401,7 +403,7 @@
 }
 .header__cart-view-cart {
     float: right;
-    margin:  0 12px 12px 0;
+    margin:  10px 12px 12px 0;
 }
 
 .header__cart-view-cart:hover {
@@ -490,7 +492,7 @@
     padding-top: 20px;
 }
 .content__warp {
-    margin-top: 20px;
+    margin: 10px 0 20px 0;
     background-color: rgb(252, 248, 248);
 }
 .home-heading {
